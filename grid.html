@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .grid-item{
+                border:solid blueviolet 1px;
+                margin:10px;
+                padding:10px
+        }
+        .grid-container{
+            display:grid;
+            grid-template-columns: 10fr 30fr 20fr;
+            grid-template-rows: 10fr 20fr 30fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container" style="margin:10px;">
+        <div class="grid-item">1_one</div>
+        <div class="grid-item" style="position:sticky; top:10px">2_two</div>
+        <div class="grid-item" style="position:sticky; top:10px">3_three</div>
+        <div class="grid-item" style="position:relative; background-color:darkkhaki">4_four</div>
+        <div class="grid-item" style="background-color:aqua; z-index:1;">5_five</div>
+        <div class="grid-item" style="position:static; top: 100px; background-color:gold">6_six</div>
+        <div class="grid-item" style="background-color:blue;">7_seven</div>
+        <div class="grid-item">8_eight</div>
+
+        <div class="grid-item">9_nine</div>
+    </div>
+</body>
+</html>

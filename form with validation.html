@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Form with Validation</title>
+  <style>
+    table{
+            
+      background-color: rgba(128, 128, 128, 0.493);
+      color:black;
+      border: 3px solid black;
+      margin: 20px;
+      padding: 10px;
+    } 
+  </style>
+  </head>
+  <body>
+    <h1>Enter your information:</h1>
+    <table>
+      <tr>
+        <td>
+          <form onsubmit="return validateForm()">
+            <label>Name:</label>
+            <input type="text" id="name" maxlength="15" />
+            <br />
+            <label>Age:</label>
+            <input type="number" id="age" maxlength="15" />
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </td>
+      </tr>
+    </table>
+    <form onsubmit="return validateForm()">
+      <label>Name:</label>
+      <input type="text" id="name" maxlength="15" />
+      <br />
+      <label>Age:</label>
+      <input type="number" id="age" maxlength="15" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+
+        if (name == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+
+        if (age == "" || isNaN(age)) {
+          alert("Age must be a valid number");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>
