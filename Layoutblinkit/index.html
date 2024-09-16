@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Store - Blinkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="BlinkitLogo.png" alt="Blinkit Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search 'bread'">
+            </div>
+            <div class="account">
+                <a href="login.html">Account</a>
+            </div>
+                <div class="cart">🛒 My Cart</div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <div class="print-store">
+            <h1>Print Store</h1>
+            <p>Blinkit provides Safe & Secure printouts</p>
+            <!-- Upload and Illustration Container -->
+            <div class="upload-illustration-container">
+                <!-- Upload Box -->
+                <div class="upload-box">
+                    <h2>Upload your files</h2>
+                    <p>We support all popular formats like PDF, JPG, PNG, JPEG etc</p>
+                    <div class="drop-box">
+                        <span>Drop files here</span>
+                        <input type="file" id="file-upload" multiple title="Upload your files" placeholder="Choose files">
+                    </div>
+                    <button id="upload-btn" type="button">Upload your files</button>
+                    <p class="file-info">Maximum upload file size: 50 MB • Maximum files: 15</p>
+                </div>
+                <!-- Printer Illustration -->
+                <div class="printer-illustration">
+                    <img src="Logosmth.png" alt="Printer Illustration">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
